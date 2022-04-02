@@ -103,10 +103,12 @@ function App() {
       </ParallaxContainer>
 
       <ContentContainer>
-        <h2 id="about-the-book">About the Book</h2>
-        <p>A world hanging on the edge of chaos and darkness lies before Sean. One cold fateful night in the deep of winter a warrior named Taylor stumbles upon Sean alone in the mountains. Their meeting triggers Sean toward adventure in the world sprawled before him, one they must protect. At each step in the journey Sean faces task after task meeting Ancient’s and exploring the Southern Wasted Lands.</p>
-        <p>It is here that Sean pieces together who exactly the Proclaimer of Light is; the person destined to tip the scale of an eternal struggle of good versus evil. Can Sean discover what it means to be Ancient and save the world? Joining the war of Light against Dark, Sean unlocks the shrouded mystery of the hero: Orwick Stormbringer.</p>
-      
+        <h2 id="shop">Available Product</h2>
+        {/* Can scale content with
+        transform-origin: top left;
+        transform: scale(0.75);
+        width: 125%; */}
+        <iframe style={{height: '600px', borderRadius: '0.5rem'}} src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRyEKAdQmyAZ3jkwLts4_6d_nINnNW7jevxP3hQsolBcnEdvqBh1-wksOrzJ0enhOI27NlicDXgnPeg/pubhtml?gid=0&single=true&widget=false&headers=false&chrome=false"/>
         <SocialMediaStack/>
       </ContentContainer>
       

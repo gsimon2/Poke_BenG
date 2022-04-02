@@ -1,8 +1,9 @@
 import React from 'react';
 import { Box, Grow, IconButton, SxProps, useMediaQuery } from '@mui/material';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import CatchingPokemonIcon from '@mui/icons-material/CatchingPokemon';
 import { keyframes } from '@emotion/react';
 import { CssConstants } from '../constants/CssConstants';
+import shop from '../assets/shop.svg';
 
 const downArrowAnimation = keyframes`
   0% {
@@ -27,7 +28,7 @@ const ScrollDownArrow: React.FC<IScrollDownArrowProps> = ({scrollRef, titleRef})
   const buttonSize = isMobileView ? 'medium' : 'large';
 
    const onDownArrowClick = () => {
-      const secondSectionTop = document.getElementById('about-the-book')?.offsetTop ?? 0;
+      const secondSectionTop = document.getElementById('shop')?.offsetTop ?? 0;
       const titleHeight = titleRef.current?.clientHeight ?? 0;
       scrollRef?.current?.scrollTo({left: 0, top: (secondSectionTop - titleHeight - 100), behavior: "smooth"});
     }
@@ -43,9 +44,11 @@ const ScrollDownArrow: React.FC<IScrollDownArrowProps> = ({scrollRef, titleRef})
 
    return (
       <Grow in={true} timeout={1000} style={{ transitionDelay: `500ms`}}>
-        <Box sx={{...absoluteCentering, bottom: '1rem'}}>
-          <IconButton size={buttonSize} onClick={onDownArrowClick} sx={{background: '#858282', boxShadow: 3, zIndex: 1, animation: `${downArrowAnimation} 1.25s infinite`}}>
-          <ArrowDownwardIcon />
+        <Box sx={{...absoluteCentering, bottom: '1rem', animation: `${downArrowAnimation} 1.25s infinite`}}>
+          {/* <img src={shop} /> */}
+          <p> Shop </p>
+          <IconButton size={buttonSize} onClick={onDownArrowClick} sx={{background: '#858282', boxShadow: 3, zIndex: 1 }}>
+          <CatchingPokemonIcon />
           </IconButton>
         </Box>
       </Grow>

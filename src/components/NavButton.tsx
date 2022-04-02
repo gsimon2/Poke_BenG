@@ -37,7 +37,7 @@ const NavButton: React.FC<INavButtonProps> = ({scrollRef}) => {
         }}
       >
         <MenuItem onClick={() => onMenuItemClick('title')}>Title</MenuItem>
-        <MenuItem onClick={() => onMenuItemClick('about-the-book')}>About the Book</MenuItem>
+        <MenuItem onClick={() => onMenuItemClick('shop')}>Shop</MenuItem>
         <MenuItem onClick={() => onMenuItemClick('get-a-copy')}>Get a Copy</MenuItem>
         <MenuItem onClick={() => onMenuItemClick('about-the-author')}>About the Author</MenuItem>
       </Menu>
