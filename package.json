@@ -1,7 +1,7 @@
 {
-  "name": "winds-of-shadow",
+  "name": "poke_beng",
   "version": "0.1.0",
-  "homepage": "http://gsimon2.github.io/winds-of-shadow",
+  "homepage": "http://gsimon2.github.io/Poke_BenG",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.8.2",

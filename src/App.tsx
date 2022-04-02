@@ -93,12 +93,12 @@ function App() {
           <Box sx={{ ...title, ...centerContent, ...(isStickyTitle ? stickyTitle : nonStickyTitle), flexDirection: 'column'}} ref={titleRef}>
             <Grow in={true} timeout={1000}>
               <h1 id="title" style={{margin: 0, fontSize: isMobileView ? '4rem' : '7rem'}}>
-                Winds Of Shadow
+                Poke_BenG
               </h1>
             </Grow>
-            <Grow in={true} timeout={1000}>
+            {/* <Grow in={true} timeout={1000}>
               <p style={{position: "relative", fontSize: isMobileView ? '1.5rem' : '2rem', margin: 0}}>By Benjamin J Stegenga</p>
-            </Grow>
+            </Grow> */}
           </Box>
       </ParallaxContainer>
 
