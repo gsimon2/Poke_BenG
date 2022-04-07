@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Poke_BenG/static/css/main.0c68cb40.css",
+    "main.js": "/Poke_BenG/static/js/main.d61a3e73.js",
+    "static/js/787.589ed89f.chunk.js": "/Poke_BenG/static/js/787.589ed89f.chunk.js",
+    "static/media/dark-forest.webp": "/Poke_BenG/static/media/dark-forest.be8fcbe9307ca08b2678.webp",
+    "static/media/misty_mountains.jpg": "/Poke_BenG/static/media/misty_mountains.3e547d16ea8a2367a1b9.jpg",
+    "index.html": "/Poke_BenG/index.html",
+    "main.0c68cb40.css.map": "/Poke_BenG/static/css/main.0c68cb40.css.map",
+    "main.d61a3e73.js.map": "/Poke_BenG/static/js/main.d61a3e73.js.map",
+    "787.589ed89f.chunk.js.map": "/Poke_BenG/static/js/787.589ed89f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c68cb40.css",
+    "static/js/main.d61a3e73.js"
+  ]
+}
