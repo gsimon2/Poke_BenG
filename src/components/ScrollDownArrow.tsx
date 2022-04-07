@@ -47,7 +47,7 @@ const ScrollDownArrow: React.FC<IScrollDownArrowProps> = ({scrollRef, titleRef})
         <Box sx={{...absoluteCentering, bottom: '1rem', animation: `${downArrowAnimation} 1.25s infinite`}}>
           {/* <img src={shop} /> */}
           <p> Shop </p>
-          <IconButton size={buttonSize} onClick={onDownArrowClick} sx={{background: '#858282', boxShadow: 3, zIndex: 1 }}>
+          <IconButton size={buttonSize} onClick={onDownArrowClick} sx={{background: '#858282', boxShadow: 3, zIndex: 1, '&:hover': {background: '#858282'} }}>
           <CatchingPokemonIcon />
           </IconButton>
         </Box>
