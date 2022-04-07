@@ -11,6 +11,8 @@ import ScrollDownArrow from './components/ScrollDownArrow';
 import ContentContainer from './components/ContentContainer';
 import { CssConstants } from './constants/CssConstants';
 import SocialMediaStack from './components/SocialMediaStack';
+import GrowWhenInView from './components/GrowWhenInView';
+import AnimateWhenInView from './components/AnimateWhenInView';
 
 const title: React.CSSProperties = {
   display: 'flex',
@@ -103,18 +105,22 @@ function App() {
       </ParallaxContainer>
 
       <ContentContainer>
-        <h2 id="shop">Available Product</h2>
+        <AnimateWhenInView>
+          <h2 id="shop">Available Product</h2>
+        </AnimateWhenInView>
         {/* Can scale content with
         transform-origin: top left;
         transform: scale(0.75);
         width: 125%; */}
-        <iframe style={{height: '600px', borderRadius: '0.5rem'}} src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRyEKAdQmyAZ3jkwLts4_6d_nINnNW7jevxP3hQsolBcnEdvqBh1-wksOrzJ0enhOI27NlicDXgnPeg/pubhtml?gid=0&single=true&widget=false&headers=false&chrome=false"/>
+        <GrowWhenInView>
+          <iframe style={{height: '600px', borderRadius: '0.5rem'}} src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRyEKAdQmyAZ3jkwLts4_6d_nINnNW7jevxP3hQsolBcnEdvqBh1-wksOrzJ0enhOI27NlicDXgnPeg/pubhtml?gid=0&single=true&widget=false&headers=false&chrome=false"/>
+        </GrowWhenInView>
         <SocialMediaStack/>
       </ContentContainer>
       
       <ParallaxContainer imagePath={darkForest} style={{height: '300px', filter: 'brightness(0.75)'}} />
 
-      <ContentContainer>
+      {/* <ContentContainer>
         <h2 id="get-a-copy">Get a Copy</h2>
         <Grid container spacing={2} sx={{padding: '2rem 0'}}>
           <Grid item sx={centerContent} md={6} xs={12}>
@@ -124,10 +130,10 @@ function App() {
             <img src={bookCover} alt="Winds of Shadow book cover" />
           </Grid>
         </Grid>
-      </ContentContainer>
+      </ContentContainer> */}
 
-      <ParallaxContainer imagePath={cavern} style={{height: '300px', filter: 'brightness(0.75)'}} />
-
+      {/* <ParallaxContainer imagePath={cavern} style={{height: '300px', filter: 'brightness(0.75)'}} /> */}
+{/* 
       <ContentContainer>
         <h2 id="about-the-author">About the Author</h2>
         <Grid container spacing={2} >
@@ -167,7 +173,7 @@ function App() {
             </Box>
           </Grid>
         </Grid>
-      </ContentContainer>
+      </ContentContainer> */}
 
       <Box sx={{color: 'white', textAlign: 'center'}}>
         <p>Copyright © BenjaminJStegenga. All rights reserved.</p>
